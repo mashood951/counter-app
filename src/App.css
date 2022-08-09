@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #181A1B;
+}
+
+.app {
+  width: 100%;
+}
+
+.title {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  translate: -50% 0;
+  color: white;
+}
+
+.counter-container {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 2px 4px 3px #363636;
+}
+
+.counter-container .counter {
+  background-color: grey;
+  flex: 3;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.counter div.inactive {
+  translate: 0 -100%;
+  opacity: 1;
+  transition: none;
+}
+
+.counter div {
+  flex: 1;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.counter-container .btns {
+  background-color: #909090;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btns .btn {
+  flex: 1;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.btns .btn:active {
+  scale: 98%;
+}
